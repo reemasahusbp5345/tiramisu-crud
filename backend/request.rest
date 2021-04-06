@@ -1,0 +1,29 @@
+GET http://localhost:5000/api/products
+
+###
+POST http://localhost:5000/api/product
+Content-Type: application/json
+
+{
+    "sku":"AGR_BRIN",
+    "name":"Brinjal",
+    "category":"Vegetables",
+    "season":"All"
+}
+
+###
+DELETE http://localhost:5000/api/deleteProduct/606afd349a0651254c84fdb3
+
+###
+POST http://localhost:5000/api/updateProduct/606afd8c9a0651254c84fdb4
+Content-Type: application/json
+
+{
+    "sku":"AGR-CAUL",
+    "name":"Cauliflower",
+    "category":"Vegetables",
+    "season":"All"
+}
+
+###
+GET http://localhost:5000/api/searchProducts/Ar
